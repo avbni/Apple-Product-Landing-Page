@@ -1,0 +1,306 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <script src="https://kit.fontawesome.com/5795c72a89.js" crossorigin="anonymous"></script>
+    <style> 
+       body{background-color:#e7e7e7;} 
+       #nav-bar{ 
+        background-image:linear-gradient(45deg,#e49191,#dad6d7); 
+        color:white; 
+        display:flex; 
+        justify-content: space-between; 
+        align-self: center; 
+        max-width: 100%;
+        height:6vmax;
+       } 
+       #tabs{ 
+           display:flex; 
+       } 
+       h1{ 
+           font-size:3.8vmax; 
+           display:flex; 
+           align-self: center; 
+       } 
+       a{  color: #050A30; 
+           font-size: 1.5vmax; 
+           display:flex; 
+           padding-left:1vmax; 
+           padding-right:1vmax; 
+           padding-top:1.5vmax; 
+           padding-bottom:1.5vmax; 
+           justify-content: center; 
+       } 
+       #form-container{ 
+           display:flex; 
+           flex-direction:column ; 
+           align-items: center;
+       } 
+       #Email-field{ 
+           width:25vmax; 
+           height:3vmax; 
+       } 
+       #email{
+           display: flex;
+           align-self: center;
+           justify-content: center;
+       }
+       #button{
+           margin-top: 20px;
+           color: rgb(255, 255, 255);
+           background-color: rgb(236, 190, 198);
+           border-radius: 40px;
+           border-color:rgb(236, 190, 198);
+           width: 13vmax;
+           height: 4svmax;
+           font-size: 2vmax;
+           
+           
+       }
+       #button:hover{
+    transform: scale(1.1);
+       }
+       #details-container-1{
+            border-radius: 5px;
+            width: 800px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 15px;
+            border-style: solid;
+            border-color: #ffbec9s;
+        }
+        #details-container-1:hover{
+            animation-name: hover-animation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            
+        }
+        @keyframes hover-animation {
+            100%{
+                border-style: solid;
+                border-color: #ffbec9;
+                border-width: 3px;
+                background-color: #fffefe;
+                transform: scale(1.03);
+            }
+            
+        }
+        #icon{
+            font-size: 80px;
+            padding-right: 5vmax;
+            padding-left: 2vmax;
+            padding-top: 1vmax;
+            padding-bottom: 1vmax;
+        }
+        #ads{
+            display: flex;
+            flex-direction:column ;
+            align-items: center;
+            padding-top: 3vmax;
+        }
+        @media (max-width: 770px){
+            #icon{
+            font-size: 10vmax;
+            padding-right: 5vmax;
+            padding-left: 2vmax;
+            padding-top: 1vmax;
+            padding-bottom: 1vmax;
+        }
+            #details-container{
+            border-radius: 5px;
+            width: 90vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2vh;
+            border-style: solid;
+            border-color: #ffffff;
+        }
+            #details-container-1{
+            border-radius: 5px;
+            width: 90vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 2vh;
+            border-style: solid;
+            border-color: #ffffff;
+        }
+            #price-container{
+            display: flex;
+            flex-direction: column;
+        }
+            #price-box{
+                margin-bottom: 30px;
+            }
+    
+    }
+    #utube{
+                display: flex;
+                justify-self: center;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                size: 10vmax;
+                padding-top: 5vmax;
+                flex-direction: column;
+            }
+            .class-container{ 
+        display:flex; 
+        flex-direction: row; 
+        padding-left:7vmax; 
+        width:80vmax; 
+        justify-content:space-between; 
+       } 
+        
+       .card{ 
+         display:flex; 
+         flex-direction: column; 
+         background-color: #feffbe; 
+         width:25vmax; 
+         height:33vmax;
+         border-radius: 5px; 
+         border-style: solid; 
+         border-color: rgb(255, 255, 255); 
+         justify-content: space-around; 
+         box-shadow:2px 2px 20px #020520 ; 
+       } 
+       .card:hover{ 
+        animation-name: hover-animation; 
+            animation-duration: 1s; 
+            animation-fill-mode: forwards; 
+ 
+       } 
+       .image img{ width:25vmax; 
+        height: 17vmax; 
+        border-radius: 1px; 
+       } 
+       .title{ 
+         width:20vmax; 
+         display:flex; 
+         justify-content: center; 
+         color:#414141; 
+         font-size: 3vmax; 
+       } 
+       .des{ 
+          text-align: center; 
+         color:rgb(231, 142, 142); 
+         font-size:1.5vmax; 
+         padding-bottom:10px; 
+       }
+    </style> 
+</head> 
+<body> 
+    <div id="nav-bar"> 
+      <h1 style="padding-left:3vmax;"><i class="fa-brands fa-apple" style="font-size:5vmax"></i></h1> 
+        <div id="tabs"> 
+            <a href="/" target="_blank">Features</a> 
+            <a href="/" target="_blank">Support</a> 
+            <a href="/" target="_blank">Pricing</a> 
+        </div> 
+    </div> 
+    <div id="form-container">
+        <h1>
+           <p style="color:rgb(43, 43, 43); font-size: 3vmax;">Apple Store.</p>
+           <p style="color: dimgray; padding-left: 4px; font-size: 3vmax;"> The best way to buy the products you love.</p>  
+        </h1>
+        <div id="email">
+        <label for="Email"></label><br> 
+        <input id ="Email-field" type="text" id="Email" name="Email" placeholder="Enter your email here"><br> 
+        </div>    
+        <button id="button" >
+            Get Started
+        </button>
+    </div> 
+    <div id="ads">
+    <div id="details-container-1" style="background-color:#e9c6c6">
+        <i class="fa-solid fa-bolt" style="font-size:5vmax; padding-right:3vmax ;padding-left:3vmax ; padding-top:1vmax ; padding-bottom:1vmax;"></i>                             
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda maiores hic accusantium veniam porro culpa, nihil pariatur quibusdam ipsum libero odio a nemo autem et in laboriosam doloremque voluptates? Sunt.</p>
+    </div> 
+    <br>
+    <br>
+    <div id="details-container-1" style="background-color:#e9c6c6">
+        <i class="fas fa-camera" style="font-size:4.5vmax ; padding-right:3vmax ;padding-left:3vmax ; "></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda maiores hic accusantium veniam porro culpa, nihil pariatur quibusdam ipsum libero odio a nemo autem et in laboriosam doloremque voluptates? Sunt.</p>
+    </div>
+    <br>
+    <br>
+    <div id="details-container-1"style="background-color:#e9c6c6">
+        <i class="fa-solid fa-money-check-dollar" style="font-size:4vmax; padding-right:3vmax ;padding-left:3vmax ;"></i>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda maiores hic accusantium veniam porro culpa, nihil pariatur quibusdam ipsum libero odio a nemo autem et in laboriosam doloremque voluptates? Sunt.</p>
+    </div> 
+</div>
+<br>
+<div id="utube">
+    <h1>
+        click below for Preview
+    </h1>
+    <br>
+    <iframe width="500" height="300" src="https://www.youtube.com/embed/ZAFYBTZrIWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<!--Cards--> 
+<br> 
+<br> 
+<br> 
+<br> 
+<div class="class-container"> 
+ <div class="card"> 
+
+   <div class="image"> 
+      <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mac-card-40-macbook-air-202110?wid=1200&hei=1000&fmt=p-jpg&qlt=95&.v=1633726242000"> 
+   </div> 
+   <div class="title"> 
+    <h1 style="font-size:2.6vmax;"> 
+   Macbook Pro</h1> 
+   </div> 
+   <div class="des"> 
+    <p>From Rs10,934/mo with EMI</p> 
+   <button>Read More...</button> 
+   </div> 
+   </div> 
+ 
+
+<div class="card"> 
+
+ <div class="image"> 
+    <img src="https://bgr.com/wp-content/uploads/2022/02/airpods-pro.jpg?quality=82&strip=all"> 
+ </div> 
+ <div class="title"> 
+  <h1 style="font-size:2.6vmax;"> 
+ Air Pods Pro</h1> 
+ </div> 
+ <div class="des"> 
+  <p>Rs 160/mo with EMI</p> 
+ <button>Read More...</button> 
+ </div> 
+ </div> 
+
+ <div class="card"> 
+
+   <div class="image"> 
+      <img src="https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-card-40-iphone13pink-202109?wid=680&hei=528&fmt=p-jpg&qlt=95&.v=1629948812000"> 
+   </div> 
+   <div class="title"> 
+    <h1 style="font-size:2.6vmax;"> 
+   iPhone 12</h1> 
+   </div> 
+   <div class="des"> 
+    <p>Rs 8,000/mo with EMI</p> 
+   <button>Read More...</button> 
+   </div> 
+   </div> 
+</div>
+
+
+
+        
+        </div>       
+    </div>
+    </div>
+
+</body> 
+</html>
